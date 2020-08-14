@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html style="font-size:37.5px">
+<head>
+    <title>页面布局测试页面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<body style="margin:0">
+  <div>
+    <p style="font-size:0.32rem">禁止滑动</p>
+    <p><span>ratio:</span><span id='ratio'></span></p>
+    <img alt='test1' src='./img/test@1.png' style="width:2.67rem"/>
+    <img alt='test2' src='./img/test@2.png' style="width:100px"/>
+    <img alt='test3' src='./img/test@3.png' style="width:100px"/>
+  </div>
+  <div>
+    <img alt='test4' src='./img/test@1.png' style="width:10rem"/>
+  </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#ratio').text(window.devicePixelRatio)
+    })
+  </script>
+</body>
